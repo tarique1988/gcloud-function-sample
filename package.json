@@ -1,0 +1,15 @@
+{
+  "name": "gcloudfunctions",
+  "version": "1.0.0",
+  "description": "test api function for gcloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TA Mirza",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
