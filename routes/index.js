@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const snapShot = [
+const sampleData = [
   { id: 1, name: "John Doe", age: 10 },
   { id: 2, name: "Jane Doe", age: 9 },
   { id: 3, name: "Steve Smith", age: 29 },
@@ -11,19 +11,19 @@ const snapShot = [
   { id: 8, name: "Salman Khan", age: 50 }
 ];
 router.get("/", (req, res) => {
-  const noteSnapshot = snapShot;
-  res.json(noteSnapshot);
+  const data = SampleData;
+  res.json(data);
 });
 
 router.get("/:id", (req, res) => {
   const id = req.params.id;
-  if (id < snapShot.length) {
-    const note = snapShot[id];
-    res.json(note);
+  if (id < sampleData.length) {
+    const data = sampleData[id];
+    res.json(data);
   } else {
     res.status(400).json({
       Error: `Incorrect ID: ${id}`,
-      Suggestion: `Please use values from 0 to ${snapShot.length - 1}`
+      Suggestion: `Please use values from 0 to ${sampleData.length - 1}`
     });
   }
 });

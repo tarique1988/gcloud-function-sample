@@ -8,5 +8,5 @@ function App(req, res) {
   return app(req, res);
 }
 
-const note = App;
-module.exports = { note };
+const sample = App;
+module.exports = { sample };

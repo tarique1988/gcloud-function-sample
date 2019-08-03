@@ -4,4 +4,4 @@ This sample code can be used to develop RESTfull API's using ExpressJs @ Google 
 
 ## Usage
 
-Clone the repository and run: `gcloud functions deploy note --runtime nodejs10 --trigger-html` from the terminal window.
+Clone the repository and run: `gcloud functions deploy sample --runtime nodejs10 --trigger-html` from the terminal window.
