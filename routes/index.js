@@ -11,7 +11,7 @@ const sampleData = [
   { id: 8, name: "Salman Khan", age: 50 }
 ];
 router.get("/", (req, res) => {
-  const data = SampleData;
+  const data = sampleData;
   res.json(data);
 });
 
